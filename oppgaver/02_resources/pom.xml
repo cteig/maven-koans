@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>maven-koans</groupId>
+    <artifactId>02_resources</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>04_resources</module>
+        <module>05_filtrering</module>
+        <module>06_filtrering_fra_fil</module>
+        <module>07_selektiv_filtrering</module>
+    </modules>
+
+</project>

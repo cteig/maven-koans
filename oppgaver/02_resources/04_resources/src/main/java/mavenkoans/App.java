@@ -1,13 +1,11 @@
 package mavenkoans;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import java.io.File;
+
+public class App
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public boolean fileExists(String filename) {
+        File file = new File(this.getClass().getClassLoader().getResource(filename).getFile());
+        return file.exists();
     }
 }

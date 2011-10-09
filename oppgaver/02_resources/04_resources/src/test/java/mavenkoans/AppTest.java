@@ -1,34 +1,22 @@
 package mavenkoans;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest
-        extends TestCase {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest(String testName) {
-        super(testName);
+public class AppTest 
+    extends TestCase
+{
+    private App app = new App();
+
+    public static final String FILENAME = "foo.properties";
+
+    public void testApp()
+    {
+        boolean fileExists = app.fileExists(FILENAME);
+
+        assertTrue("Tekst som beskriver at filen burde eksistert", fileExists);
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite() {
-        return new TestSuite(AppTest.class);
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp() {
-        assertTrue(true);
-    }
 }

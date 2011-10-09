@@ -9,7 +9,7 @@
 
     <modules>
         <module>04_resources</module>
-        <module>05_filtrering</module>
+        <module>05_filtering</module>
         <module>06_filtrering_fra_fil</module>
         <module>07_selektiv_filtrering</module>
     </modules>
